@@ -8,21 +8,23 @@ api_key = os.getenv("OPENAI_API_KEY")
 
 client = OpenAI(api_key=api_key)
 
-def get_ai_response(messages): 
+def get_ai_response(messages):
   response = client.chat.completions.create(
     model="gpt-4o",
     temperature=0.9,
     messages=messages,
   )
+  
   return response.choices[0].message.content
 
 messages = [
-  {"role": "system", "content": "너는 사용자를 도와주는 상담사야"},
-]
+    {"role": "system", "content": "너는 사용자를 도와주는 상담사야."}
+] # 시스템 설정 메세지
 
 while True:
-  user_input = input("사용자: ")
-  if user_input == "exit":
+  user_input = input("사용자 : ")
+  
+  if (user_input == "종료"):
     break
   
   messages.append({"role": "user", "content": user_input})
