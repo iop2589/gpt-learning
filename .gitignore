@@ -5,3 +5,7 @@ venv/
 ENV/
 evn.bak/
 venv.bak/
+*.pdf
+*.txt
+**/*.txt
+**/*.pdf
