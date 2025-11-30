@@ -1,0 +1,12 @@
+[
+    {
+        "no": 1,
+        "eng": "Which of the following descriptions of the image is incorrect?\n- (1) The image shows a large store interior with many displays and counters.\n- (2) The building has two floors, and there is seating or a cafe area on the upper level.\n- (3) Everyone in the store is working in white uniforms.\n- (4) There are many lights on the ceiling making the interior bright.",
+        "img": "seollung.jpeg"
+    },
+    {
+        "no": 2,
+        "eng": "Which of the following descriptions of the image is incorrect?\n- (1) A purple and pink nebula is visible near the center-left.\n- (2) A very bright star is shining at the top right.\n- (3) Several planets are floating in the scene.\n- (4) The image includes a nighttime city skyline.",
+        "img": "art.jpeg"
+    }
+]
