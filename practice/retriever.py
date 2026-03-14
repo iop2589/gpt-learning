@@ -6,8 +6,9 @@ load_dotenv()
 
 embedding = OpenAIEmbeddings(model="text-embedding-3-large")
 
-from langchain_openai import ChatOpenAI
-llm = ChatOpenAI(model="gpt-4o")
+# from langchain_openai import ChatOpenAI
+from langchain_ollama import ChatOllama
+llm = ChatOllama(model="deepseek-r1:14b")
 
 from langchain_chroma import Chroma
 persist_directory = "/Users/parksc/Documents/pythonworkspace/gptproject01/chroma_store1"
